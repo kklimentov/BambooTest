@@ -27,6 +27,8 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Bamboo Test_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -37,7 +39,7 @@
     <DebugSymbols>true</DebugSymbols>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <OutputPath>.\bin\Package\</OutputPath>
-    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\Bamboo Test_Package.xml</ValidationSettingsFilePath>
@@ -55,6 +57,9 @@
     <PackageVersion>
     </PackageVersion>
     <SitecoreAssemblyPath>/Assembly</SitecoreAssemblyPath>
+    <SitecoreWebUrl>http://72.bamboo.dev/</SitecoreWebUrl>
+    <SitecoreDeployFolder>C:\sim\wwwroot\72 Bamboo dev\Website</SitecoreDeployFolder>
+    <SitecoreAccessGuid>fb8b071c-4431-4933-a3a0-4930a445f260</SitecoreAccessGuid>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -69,6 +74,19 @@
       <Project>{859ca1a7-ed7e-4de8-81f3-5c632b87ad1e}</Project>
       <Name>WebApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\layout.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts\Sample Layout.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>
