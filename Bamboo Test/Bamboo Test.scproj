@@ -59,7 +59,8 @@
     <SitecoreAssemblyPath>/Assembly/</SitecoreAssemblyPath>
     <SitecoreWebUrl>
     </SitecoreWebUrl>
-    <SitecoreDeployFolder>C:\sim\wwwroot\72 Bamboo dev\Website</SitecoreDeployFolder>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
     <SitecoreAccessGuid>fb8b071c-4431-4933-a3a0-4930a445f260</SitecoreAccessGuid>
   </PropertyGroup>
   <ItemGroup>
