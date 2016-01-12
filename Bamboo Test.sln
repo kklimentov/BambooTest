@@ -7,20 +7,34 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Bamboo Test", "Bamboo Test\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{859CA1A7-ED7E-4DE8-81F3-5C632B87AD1E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assembly", "Assembly", "{1F5CD875-AEF2-4424-ACC5-308090CF4CD6}"
+	ProjectSection(SolutionItems) = preProject
+		Bamboo Test\Assembly\Sitecore.Kernel.dll = Bamboo Test\Assembly\Sitecore.Kernel.dll
+		Bamboo Test\Assembly\Sitecore.Logging.dll = Bamboo Test\Assembly\Sitecore.Logging.dll
+		Bamboo Test\Assembly\Sitecore.Update.dll = Bamboo Test\Assembly\Sitecore.Update.dll
+		Bamboo Test\Assembly\Sitecore.Zip.dll = Bamboo Test\Assembly\Sitecore.Zip.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Package|Any CPU = Package|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Package|Any CPU.ActiveCfg = Package|Any CPU
+		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Package|Any CPU.Build.0 = Package|Any CPU
+		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Package|Any CPU.Deploy.0 = Package|Any CPU
 		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6C52AEC3-A4D7-4D06-8520-22310D07667C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{859CA1A7-ED7E-4DE8-81F3-5C632B87AD1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{859CA1A7-ED7E-4DE8-81F3-5C632B87AD1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859CA1A7-ED7E-4DE8-81F3-5C632B87AD1E}.Package|Any CPU.ActiveCfg = Package|Any CPU
+		{859CA1A7-ED7E-4DE8-81F3-5C632B87AD1E}.Package|Any CPU.Build.0 = Package|Any CPU
 		{859CA1A7-ED7E-4DE8-81F3-5C632B87AD1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{859CA1A7-ED7E-4DE8-81F3-5C632B87AD1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
