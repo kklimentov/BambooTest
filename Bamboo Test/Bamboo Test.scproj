@@ -56,7 +56,7 @@
     </PackageReadme>
     <PackageVersion>
     </PackageVersion>
-    <SitecoreAssemblyPath>/Assembly/</SitecoreAssemblyPath>
+    <SitecoreAssemblyPath>../Assembly/</SitecoreAssemblyPath>
     <SitecoreWebUrl>
     </SitecoreWebUrl>
     <SitecoreDeployFolder>
