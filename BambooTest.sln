@@ -8,12 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{859CA1A7-ED7E-4DE8-81F3-5C632B87AD1E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assembly", "Assembly", "{1F5CD875-AEF2-4424-ACC5-308090CF4CD6}"
-	ProjectSection(SolutionItems) = preProject
-		Bamboo Test\Assembly\Sitecore.Kernel.dll = Bamboo Test\Assembly\Sitecore.Kernel.dll
-		Bamboo Test\Assembly\Sitecore.Logging.dll = Bamboo Test\Assembly\Sitecore.Logging.dll
-		Bamboo Test\Assembly\Sitecore.Update.dll = Bamboo Test\Assembly\Sitecore.Update.dll
-		Bamboo Test\Assembly\Sitecore.Zip.dll = Bamboo Test\Assembly\Sitecore.Zip.dll
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
